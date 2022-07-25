@@ -16,16 +16,20 @@ public class WordFrequencyGame {
                 Map<String, List<Input>> map = getListMap(inputList);
                 List<Input> list = calculateMapInputCount(map);
                 list.sort((w1, w2) -> w2.getWordCount() - w1.getWordCount());
-                StringJoiner joiner = new StringJoiner("\n");
-                for (Input word : list) {
-                    String dataString = word.getValue() + " " + word.getWordCount();
-                    joiner.add(dataString);
-                }
-                return joiner.toString();
+                return stringDelimiteSeparator(list);
             } catch (Exception e) {
                 return "Calculate Error";
             }
         }
+    }
+
+    private String stringDelimiteSeparator(List<Input> list) {
+        StringJoiner joiner = new StringJoiner("\n");
+        for (Input word : list) {
+            String dataString = word.getValue() + " " + word.getWordCount();
+            joiner.add(dataString);
+        }
+        return joiner.toString();
     }
 
     private List<Input> calculateMapInputCount(Map<String, List<Input>> map) {
