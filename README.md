@@ -10,3 +10,4 @@
  - refactor:extract method of transformStringArrayToList
  - refactor:Remove unnecessary blank lines and reformat
  - refactor:extract method of calculateMapInputCount
+ - refactor:Remove meaningless variable name transformation
