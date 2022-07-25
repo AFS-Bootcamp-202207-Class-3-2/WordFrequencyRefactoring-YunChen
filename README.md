@@ -19,3 +19,4 @@
  - refactor:extract SPACE constant
  - refactor:extract SPARATOR_DELIMITER constant
  - refactor:replace k instead inputValue in getListMap
+ - refactor:use constant SPACE

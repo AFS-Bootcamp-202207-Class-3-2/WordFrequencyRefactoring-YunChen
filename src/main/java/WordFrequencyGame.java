@@ -10,7 +10,7 @@ public class WordFrequencyGame {
     public String getResult(String inputStr) {
         if (inputStr.split(SPLIT_REGEX).length == 1) {
             String wordCount = "1";
-            return inputStr + " " + wordCount;
+            return inputStr + SPACE + wordCount;
         } else {
             try {
                 //split the input string with 1 to n pieces of spaces
