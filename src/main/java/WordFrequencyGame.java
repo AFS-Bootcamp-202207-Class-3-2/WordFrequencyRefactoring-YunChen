@@ -5,8 +5,6 @@ public class WordFrequencyGame {
     public static final String SPLIT_REGEX = "\\s+";
 
     public String getResult(String inputStr) {
-
-
         if (inputStr.split(SPLIT_REGEX).length == 1) {
             String wordCount = "1";
             return inputStr + " " + wordCount;
@@ -51,8 +49,6 @@ public class WordFrequencyGame {
         for (Input input : inputList) {
             map.computeIfAbsent(input.getValue(), k -> new ArrayList<>()).add(input);
         }
-
-
         return map;
     }
 
