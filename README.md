@@ -11,3 +11,4 @@
  - refactor:Remove unnecessary blank lines and reformat
  - refactor:extract method of calculateMapInputCount
  - refactor:Remove meaningless variable name transformation
+ - refactor:replace w to word and s to dataString

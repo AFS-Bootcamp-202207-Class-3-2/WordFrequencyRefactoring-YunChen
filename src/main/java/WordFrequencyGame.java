@@ -17,9 +17,9 @@ public class WordFrequencyGame {
                 List<Input> list = calculateMapInputCount(map);
                 list.sort((w1, w2) -> w2.getWordCount() - w1.getWordCount());
                 StringJoiner joiner = new StringJoiner("\n");
-                for (Input w : list) {
-                    String s = w.getValue() + " " + w.getWordCount();
-                    joiner.add(s);
+                for (Input word : list) {
+                    String dataString = word.getValue() + " " + word.getWordCount();
+                    joiner.add(dataString);
                 }
                 return joiner.toString();
             } catch (Exception e) {
