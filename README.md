@@ -13,3 +13,4 @@
  - refactor:Remove meaningless variable name transformation
  - refactor:replace w to word and s to dataString
  - refactor:extract method of stringDelimiteSeparator
+ - refactor:extract CALCULATE_ERROR constant

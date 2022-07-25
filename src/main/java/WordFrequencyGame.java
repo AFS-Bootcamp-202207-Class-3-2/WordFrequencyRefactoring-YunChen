@@ -3,6 +3,7 @@ import java.util.*;
 public class WordFrequencyGame {
 
     public static final String SPLIT_REGEX = "\\s+";
+    public static final String CALCULATE_ERROR = "Calculate Error";
 
     public String getResult(String inputStr) {
         if (inputStr.split(SPLIT_REGEX).length == 1) {
@@ -18,7 +19,7 @@ public class WordFrequencyGame {
                 list.sort((w1, w2) -> w2.getWordCount() - w1.getWordCount());
                 return stringDelimiteSeparator(list);
             } catch (Exception e) {
-                return "Calculate Error";
+                return CALCULATE_ERROR;
             }
         }
     }
