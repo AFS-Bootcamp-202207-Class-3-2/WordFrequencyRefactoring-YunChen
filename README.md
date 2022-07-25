@@ -18,3 +18,4 @@
  - refactor:replace e to exception
  - refactor:extract SPACE constant
  - refactor:extract SPARATOR_DELIMITER constant
+ - refactor:replace k instead inputValue in getListMap
