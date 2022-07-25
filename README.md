@@ -14,3 +14,4 @@
  - refactor:replace w to word and s to dataString
  - refactor:extract method of stringDelimiteSeparator
  - refactor:extract CALCULATE_ERROR constant
+ - refactor:replace w1 and w2 to firstWord and secondWord
