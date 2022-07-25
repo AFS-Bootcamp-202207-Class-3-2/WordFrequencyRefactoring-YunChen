@@ -18,7 +18,7 @@ public class WordFrequencyGame {
                 List<Input> list = calculateMapInputCount(map);
                 list.sort((firstWord, secondWord) -> secondWord.getWordCount() - firstWord.getWordCount());
                 return stringDelimiteSeparator(list);
-            } catch (Exception e) {
+            } catch (Exception exception) {
                 return CALCULATE_ERROR;
             }
         }
