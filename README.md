@@ -20,3 +20,4 @@
  - refactor:extract SPARATOR_DELIMITER constant
  - refactor:replace k instead inputValue in getListMap
  - refactor:use constant SPACE
+ - refactor:use stream api in method which called stringDelimiteSeparator

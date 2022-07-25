@@ -28,10 +28,7 @@ public class WordFrequencyGame {
 
     private String stringDelimiteSeparator(List<Input> list) {
         StringJoiner joiner = new StringJoiner(SPARATOR_DELIMITER);
-        for (Input word : list) {
-            String dataString = word.getValue() + SPACE + word.getWordCount();
-            joiner.add(dataString);
-        }
+        list.stream().forEach(input -> joiner.add(input.getValue()+SPACE+input.getWordCount()));
         return joiner.toString();
     }
 
