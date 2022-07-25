@@ -2,19 +2,20 @@ import java.util.*;
 
 public class WordFrequencyGame {
 
-    public static final String SPECLIT_REGEX = "\\s+";
+    public static final String SPLIT_REGEX = "\\s+";
 
     public String getResult(String inputStr){
 
 
-        if (inputStr.split(SPECLIT_REGEX).length==1) {
-            return inputStr + " 1";
+        if (inputStr.split(SPLIT_REGEX).length==1) {
+            String wordCount = "1";
+            return inputStr + " " + wordCount;
         } else {
 
             try {
 
                 //split the input string with 1 to n pieces of spaces
-                String[] arr = inputStr.split(SPECLIT_REGEX);
+                String[] arr = inputStr.split(SPLIT_REGEX);
 
                 List<Input> inputList = new ArrayList<>();
                 for (String s : arr) {
