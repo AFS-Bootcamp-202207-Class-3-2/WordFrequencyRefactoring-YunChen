@@ -16,3 +16,4 @@
  - refactor:extract CALCULATE_ERROR constant
  - refactor:replace w1 and w2 to firstWord and secondWord
  - refactor:replace e to exception
+ - refactor:extract SPACE constant

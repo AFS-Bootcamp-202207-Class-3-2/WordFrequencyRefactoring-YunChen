@@ -4,6 +4,7 @@ public class WordFrequencyGame {
 
     public static final String SPLIT_REGEX = "\\s+";
     public static final String CALCULATE_ERROR = "Calculate Error";
+    public static final String SPACE = " ";
 
     public String getResult(String inputStr) {
         if (inputStr.split(SPLIT_REGEX).length == 1) {
@@ -27,7 +28,7 @@ public class WordFrequencyGame {
     private String stringDelimiteSeparator(List<Input> list) {
         StringJoiner joiner = new StringJoiner("\n");
         for (Input word : list) {
-            String dataString = word.getValue() + " " + word.getWordCount();
+            String dataString = word.getValue() + SPACE + word.getWordCount();
             joiner.add(dataString);
         }
         return joiner.toString();
