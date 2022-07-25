@@ -15,8 +15,8 @@ public class WordFrequencyGame {
                 //split the input string with 1 to n pieces of spaces
                 String[] splitInputStr = inputStr.split(SPLIT_REGEX);
                 List<Input> inputList = new ArrayList<>();
-                for (String s : splitInputStr) {
-                    Input input = new Input(s, 1);
+                for (String string : splitInputStr) {
+                    Input input = new Input(string, 1);
                     inputList.add(input);
                 }
                 //get the map for the next step of sizing the same word
