@@ -13,12 +13,7 @@ public class WordFrequencyGame {
         } else {
             try {
                 //split the input string with 1 to n pieces of spaces
-                String[] splitInputStr = inputStr.split(SPLIT_REGEX);
-                List<Input> inputList = new ArrayList<>();
-                for (String string : splitInputStr) {
-                    Input input = new Input(string, 1);
-                    inputList.add(input);
-                }
+                List<Input> inputList = transformStringArrayToList(inputStr);
                 //get the map for the next step of sizing the same word
                 Map<String, List<Input>> map = getListMap(inputList);
                 List<Input> list = new ArrayList<>();
@@ -38,6 +33,16 @@ public class WordFrequencyGame {
                 return "Calculate Error";
             }
         }
+    }
+
+    private List<Input> transformStringArrayToList(String inputStr) {
+        String[] splitInputStr = inputStr.split(SPLIT_REGEX);
+        List<Input> inputList = new ArrayList<>();
+        for (String string : splitInputStr) {
+            Input input = new Input(string, 1);
+            inputList.add(input);
+        }
+        return inputList;
     }
 
 

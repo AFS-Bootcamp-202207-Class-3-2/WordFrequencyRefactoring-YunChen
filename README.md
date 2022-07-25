@@ -7,3 +7,4 @@
  - refactor:Remove unnecessary blank lines and reformat
  - refactor:replace name of arr ,become splitInputStr
  - refactor:replace mysterious name of loop's s
+ - refactor:extract method of transformStringArrayToList
